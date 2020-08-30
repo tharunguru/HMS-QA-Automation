@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="23" passed="21">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="136870" started-at="2020-08-29T15:38:04 IST" finished-at="2020-08-29T15:40:21 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="136870" started-at="2020-08-29T15:38:04 IST" finished-at="2020-08-29T15:40:21 IST">
+      <class name="hospitalManagementPack.HospitalManagement">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:hospitalManagementPack.HospitalManagement@887af79]" name="beforeTest" is-config="true" duration-ms="5874" started-at="2020-08-29T15:38:04 IST" finished-at="2020-08-29T15:38:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login()[pri:0, instance:hospitalManagementPack.HospitalManagement@887af79]" name="login" duration-ms="9633" started-at="2020-08-29T15:38:10 IST" finished-at="2020-08-29T15:38:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="dashboardValidation()[pri:1, instance:hospitalManagementPack.HospitalManagement@887af79]" name="dashboardValidation" duration-ms="14659" started-at="2020-08-29T15:38:20 IST" finished-at="2020-08-29T15:38:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardValidation -->
+        <test-method status="FAIL" signature="DoctorsValidation()[pri:2, instance:hospitalManagementPack.HospitalManagement@887af79]" name="DoctorsValidation" duration-ms="20327" started-at="2020-08-29T15:38:34 IST" finished-at="2020-08-29T15:38:55 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" name="submit" id="submit" class="btn btn-o btn-primary" disabled="">...</button> is not clickable at point (340, 572). Other element would receive the click: <form role="form" name="adddoc" method="post" onsubmit="return valid();">...</form>
+  (Session info: chrome=84.0.4147.135)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DELL', ip: '192.168.1.5', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d916db9f93af371bd3e56c7e9d41d415]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" name="submit" id="submit" class="btn btn-o btn-primary" disabled="">...</button> is not clickable at point (340, 572). Other element would receive the click: <form role="form" name="adddoc" method="post" onsubmit="return valid();">...</form>
+  (Session info: chrome=84.0.4147.135)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DELL', ip: '192.168.1.5', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d916db9f93af371bd3e56c7e9d41d415
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at hospitalManagementPack.HospitalManagement.DoctorsValidation(HospitalManagement.java:105)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoctorsValidation -->
+        <test-method status="PASS" signature="usersVlidation()[pri:3, instance:hospitalManagementPack.HospitalManagement@887af79]" name="usersVlidation" duration-ms="2572" started-at="2020-08-29T15:38:55 IST" finished-at="2020-08-29T15:38:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usersVlidation -->
+        <test-method status="PASS" signature="patientsVlidation()[pri:4, instance:hospitalManagementPack.HospitalManagement@887af79]" name="patientsVlidation" duration-ms="2766" started-at="2020-08-29T15:38:57 IST" finished-at="2020-08-29T15:39:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patientsVlidation -->
+        <test-method status="PASS" signature="appointmentVlidation()[pri:5, instance:hospitalManagementPack.HospitalManagement@887af79]" name="appointmentVlidation" duration-ms="1497" started-at="2020-08-29T15:39:00 IST" finished-at="2020-08-29T15:39:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appointmentVlidation -->
+        <test-method status="PASS" signature="contactsVlidation()[pri:6, instance:hospitalManagementPack.HospitalManagement@887af79]" name="contactsVlidation" duration-ms="5387" started-at="2020-08-29T15:39:02 IST" finished-at="2020-08-29T15:39:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactsVlidation -->
+        <test-method status="PASS" signature="doctorSectionVlidation()[pri:7, instance:hospitalManagementPack.HospitalManagement@887af79]" name="doctorSectionVlidation" duration-ms="1581" started-at="2020-08-29T15:39:07 IST" finished-at="2020-08-29T15:39:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doctorSectionVlidation -->
+        <test-method status="PASS" signature="userSectionVlidation()[pri:8, instance:hospitalManagementPack.HospitalManagement@887af79]" name="userSectionVlidation" duration-ms="1513" started-at="2020-08-29T15:39:09 IST" finished-at="2020-08-29T15:39:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSectionVlidation -->
+        <test-method status="PASS" signature="reportsVlidation()[pri:9, instance:hospitalManagementPack.HospitalManagement@887af79]" name="reportsVlidation" duration-ms="8481" started-at="2020-08-29T15:39:10 IST" finished-at="2020-08-29T15:39:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsVlidation -->
+        <test-method status="PASS" signature="patientSearchValidation()[pri:10, instance:hospitalManagementPack.HospitalManagement@887af79]" name="patientSearchValidation" duration-ms="1378" started-at="2020-08-29T15:39:19 IST" finished-at="2020-08-29T15:39:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patientSearchValidation -->
+        <test-method status="PASS" signature="logoutValidation()[pri:11, instance:hospitalManagementPack.HospitalManagement@887af79]" name="logoutValidation" duration-ms="1602" started-at="2020-08-29T15:39:20 IST" finished-at="2020-08-29T15:39:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutValidation -->
+        <test-method status="PASS" signature="doctorslogin()[pri:12, instance:hospitalManagementPack.HospitalManagement@887af79]" name="doctorslogin" duration-ms="8039" started-at="2020-08-29T15:39:22 IST" finished-at="2020-08-29T15:39:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doctorslogin -->
+        <test-method status="PASS" signature="dashBoardVerification()[pri:13, instance:hospitalManagementPack.HospitalManagement@887af79]" name="dashBoardVerification" duration-ms="7106" started-at="2020-08-29T15:39:30 IST" finished-at="2020-08-29T15:39:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashBoardVerification -->
+        <test-method status="PASS" signature="AppointmentHistoryValidation()[pri:14, instance:hospitalManagementPack.HospitalManagement@887af79]" name="AppointmentHistoryValidation" duration-ms="2509" started-at="2020-08-29T15:39:37 IST" finished-at="2020-08-29T15:39:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppointmentHistoryValidation -->
+        <test-method status="FAIL" signature="PatientValidation()[pri:15, instance:hospitalManagementPack.HospitalManagement@887af79]" name="PatientValidation" duration-ms="6130" started-at="2020-08-29T15:39:39 IST" finished-at="2020-08-29T15:39:45 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" name="submit" id="submit" class="btn btn-o btn-primary" disabled="">...</button> is not clickable at point (331, 540). Other element would receive the click: <form role="form" name="" method="post">...</form>
+  (Session info: chrome=84.0.4147.135)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DELL', ip: '192.168.1.5', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d916db9f93af371bd3e56c7e9d41d415]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" name="submit" id="submit" class="btn btn-o btn-primary" disabled="">...</button> is not clickable at point (331, 540). Other element would receive the click: <form role="form" name="" method="post">...</form>
+  (Session info: chrome=84.0.4147.135)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DELL', ip: '192.168.1.5', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49214}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d916db9f93af371bd3e56c7e9d41d415
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at hospitalManagementPack.HospitalManagement.PatientValidation(HospitalManagement.java:282)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PatientValidation -->
+        <test-method status="PASS" signature="searchValidation()[pri:16, instance:hospitalManagementPack.HospitalManagement@887af79]" name="searchValidation" duration-ms="3488" started-at="2020-08-29T15:39:45 IST" finished-at="2020-08-29T15:39:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchValidation -->
+        <test-method status="PASS" signature="DoctorLogout()[pri:17, instance:hospitalManagementPack.HospitalManagement@887af79]" name="DoctorLogout" duration-ms="2672" started-at="2020-08-29T15:39:49 IST" finished-at="2020-08-29T15:39:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoctorLogout -->
+        <test-method status="PASS" signature="patientlogin()[pri:18, instance:hospitalManagementPack.HospitalManagement@887af79]" name="patientlogin" duration-ms="8132" started-at="2020-08-29T15:39:52 IST" finished-at="2020-08-29T15:40:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patientlogin -->
+        <test-method status="PASS" signature="dashBoardValidation()[pri:19, instance:hospitalManagementPack.HospitalManagement@887af79]" name="dashBoardValidation" duration-ms="7847" started-at="2020-08-29T15:40:00 IST" finished-at="2020-08-29T15:40:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashBoardValidation -->
+        <test-method status="PASS" signature="bookAppointmentValidation()[pri:20, instance:hospitalManagementPack.HospitalManagement@887af79]" name="bookAppointmentValidation" duration-ms="10520" started-at="2020-08-29T15:40:08 IST" finished-at="2020-08-29T15:40:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAppointmentValidation -->
+        <test-method status="PASS" signature="appointmentHistoryValidation()[pri:21, instance:hospitalManagementPack.HospitalManagement@887af79]" name="appointmentHistoryValidation" duration-ms="1486" started-at="2020-08-29T15:40:18 IST" finished-at="2020-08-29T15:40:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appointmentHistoryValidation -->
+        <test-method status="PASS" signature="MedicalHistoryValidation()[pri:22, instance:hospitalManagementPack.HospitalManagement@887af79]" name="MedicalHistoryValidation" duration-ms="1464" started-at="2020-08-29T15:40:20 IST" finished-at="2020-08-29T15:40:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MedicalHistoryValidation -->
+      </class> <!-- hospitalManagementPack.HospitalManagement -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
