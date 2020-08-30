@@ -19,7 +19,7 @@ public class HospitalManagement {
 	public void beforeTest() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\selenium\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://localhost/hospital/");
+		driver.get("http://localhost/hospital/"); //code starting
 
 	}
 	@Test(priority = 0)
